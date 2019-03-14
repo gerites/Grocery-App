@@ -11,16 +11,21 @@ class MyApp extends StatelessWidget {
   ThemeData _buildSampleTheme() {
     final ThemeData base =ThemeData.light();
     return base.copyWith(
-      primaryColor: Colors.white,
+      primaryColor: Colors.green,
       accentColor: Colors.white,
       iconTheme: IconThemeData(
         color: Colors.black,
         size: 35,
       ),
       primaryIconTheme: IconThemeData(
-        color: Colors.black,
+        color: Colors.white,
       ),
-      buttonColor: Colors.amber.shade500
+      buttonColor: Colors.blue,
+      textTheme: TextTheme(
+        title: TextStyle(
+          color: Colors.white
+        )
+      )
     );
   }
 

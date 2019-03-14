@@ -166,7 +166,7 @@ class oder_history extends State<Oder_History> {
                                 ),
                                 Divider(
                                   height: 10.0,
-                                  color: Colors.amber.shade500,
+                                  color: Theme.of(context).buttonColor,
                                 ),
 
                                 Row(
@@ -247,7 +247,7 @@ class oder_history extends State<Oder_History> {
                                 ),
                                 Divider(
                                   height: 10.0,
-                                  color: Colors.amber.shade500,
+                                  color: Theme.of(context).buttonColor,
                                 ),
 
                                 Row(
@@ -256,7 +256,7 @@ class oder_history extends State<Oder_History> {
                                     Icon(
                                       Icons.location_on,
                                       size: 20.0,
-                                        color: Colors.amber.shade500,
+                                        color: Theme.of(context).buttonColor,
                                     ),
                                     Text(itemList[ind].address,
                                         style: TextStyle(
@@ -266,7 +266,7 @@ class oder_history extends State<Oder_History> {
                                 ),
                                 Divider(
                                   height: 10.0,
-                                  color: Colors.amber.shade500,
+                                  color: Theme.of(context).buttonColor,
                                 ),
                                 Container(
                                  child:_status(itemList[ind].cancelOder)

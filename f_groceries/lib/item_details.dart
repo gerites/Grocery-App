@@ -79,12 +79,6 @@ class item_details extends State<Item_Details> {
                 width: 30.0,
                 child: new GestureDetector(
                   onTap: () {
-                    /*Navigator.of(context).push(
-                  new MaterialPageRoute(
-                      builder:(BuildContext context) =>
-                      new CartItemsScreen()
-                  )
-              );*/
                   },
                   child: Stack(
                     children: <Widget>[
@@ -102,7 +96,7 @@ class item_details extends State<Item_Details> {
                               child: new Stack(
                               children: <Widget>[
                                 new Icon(Icons.brightness_1,
-                                    size: 20.0, color: Colors.orange.shade500),
+                                    size: 20.0, color: Theme.of(context).buttonColor),
                                 new Positioned(
                                     top: 4.0,
                                     right: 5.5,
@@ -236,11 +230,9 @@ class item_details extends State<Item_Details> {
                                   Row(
                                     children: <Widget>[
                                       new IconButton(
-                                        icon: Icon(_add_icon(),color: Colors.amber.shade500),
+                                        icon: Icon(_add_icon(),color: Theme.of(context).buttonColor),
                                         onPressed: () {
-
                                             item = item + 1;
-
                                         },
                                       ),
                                       Container(
@@ -256,7 +248,7 @@ class item_details extends State<Item_Details> {
                                         margin: EdgeInsets.only(right:2.0),
                                       ),
                                       new IconButton(
-                                        icon: Icon(_sub_icon(),color: Colors.amber.shade500),
+                                        icon: Icon(_sub_icon(),color: Theme.of(context).buttonColor),
                                         onPressed: () {
                                           if(item<0){
 
@@ -274,9 +266,9 @@ class item_details extends State<Item_Details> {
                                     child:  Container(
                                       alignment: Alignment.center,
                                       child: OutlineButton(
-                                          borderSide: BorderSide(color: Colors.amber.shade500),
+                                          borderSide: BorderSide(color: Theme.of(context).buttonColor),
                                           child: const Text('Add'),
-                                          textColor: Colors.amber.shade500,
+                                          textColor: Theme.of(context).buttonColor,
                                           onPressed: () {
                                             Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart_screen()));
                                           },

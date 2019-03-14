@@ -135,19 +135,13 @@ class Cart extends State<Cart_screen> {
               width: 30.0,
               child: new GestureDetector(
                 onTap: () {
-                  /*Navigator.of(context).push(
-                  new MaterialPageRoute(
-                      builder:(BuildContext context) =>
-                      new CartItemsScreen()
-                  )
-              );*/
                 },
                 child: Stack(
                   children: <Widget>[
                     new IconButton(
                         icon: new Icon(
                           Icons.home,
-                          color: Colors.amber,
+                          color: Theme.of(context).buttonColor,
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -330,9 +324,7 @@ class Cart extends State<Cart_screen> {
                                                             new IconButton(
                                                               icon: Icon(
                                                                   _add_icon(),
-                                                                  color: Colors
-                                                                      .amber
-                                                                      .shade500),
+                                                                  color: Theme.of(context).buttonColor),
                                                               onPressed: () {
                                                                 // item = item + 1;
                                                               },
@@ -357,9 +349,7 @@ class Cart extends State<Cart_screen> {
                                                             new IconButton(
                                                               icon: Icon(
                                                                   _sub_icon(),
-                                                                  color: Colors
-                                                                      .amber
-                                                                      .shade500),
+                                                                  color: Theme.of(context).buttonColor),
                                                               onPressed: () {
                                                                 /* if(item<0){
 
@@ -424,9 +414,9 @@ class Cart extends State<Cart_screen> {
                         alignment: Alignment.center,
                         child: OutlineButton(
                             borderSide:
-                            BorderSide(color: Colors.amber.shade500),
+                            BorderSide(color: Theme.of(context).buttonColor),
                             child: const Text('CONFIRM ORDER'),
-                            textColor: Colors.amber.shade500,
+                            textColor: Theme.of(context).buttonColor,
                             onPressed: () {
                               Navigator.push(
                                   context,

@@ -66,12 +66,6 @@ class check_out extends State<Checkout> {
             width: 30.0,
             child: new GestureDetector(
               onTap: () {
-                /*Navigator.of(context).push(
-                  new MaterialPageRoute(
-                      builder:(BuildContext context) =>
-                      new CartItemsScreen()
-                  )
-              );*/
               },
             ),
           ),
@@ -542,9 +536,9 @@ class check_out extends State<Checkout> {
                         alignment: Alignment.center,
                         child: OutlineButton(
                             borderSide:
-                                BorderSide(color: Colors.amber.shade500),
+                                BorderSide(color: Theme.of(context).buttonColor),
                             child: const Text('CONFIRM ORDER'),
-                            textColor: Colors.amber.shade500,
+                            textColor: Theme.of(context).buttonColor,
                             onPressed: () {
                               Navigator.push(
                                   context,

@@ -137,7 +137,7 @@ class item extends State<Item_Screen> {
                         child: new Stack(
                           children: <Widget>[
                             new Icon(Icons.brightness_1,
-                                size: 20.0, color: Colors.orange.shade500),
+                                size: 20.0, color: Theme.of(context).buttonColor),
                             new Positioned(
                                 top: 4.0,
                                 right: 5.5,
@@ -305,9 +305,9 @@ class item extends State<Item_Screen> {
                     style: TextStyle(fontSize: 12.0, color: Colors.black26),),
                   _verticalD(),
                   OutlineButton(
-                      borderSide: BorderSide(color: Colors.amber.shade500),
+                      borderSide: BorderSide(color: Theme.of(context).buttonColor),
                       child: const Text('CLEAR'),
-                      textColor: Colors.amber.shade500,
+                      textColor: Theme.of(context).buttonColor,
                       onPressed: () {},
                       shape: new OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -315,9 +315,9 @@ class item extends State<Item_Screen> {
 
                   _verticalD(),
                   OutlineButton(
-                      borderSide: BorderSide(color: Colors.amber.shade500),
+                      borderSide: BorderSide(color: Theme.of(context).buttonColor),
                       child: const Text('APPLY'),
-                      textColor: Colors.amber.shade500,
+                      textColor: Theme.of(context).buttonColor,
                       onPressed: () {},
                       shape: new OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -1330,9 +1330,9 @@ class TravelDestinationItem extends StatelessWidget {
                 Container(
                   alignment: Alignment.center,
                   child: OutlineButton(
-                      borderSide: BorderSide(color: Colors.amber.shade500),
+                      borderSide: BorderSide(color: Theme.of(context).buttonColor),
                       child: const Text('Add'),
-                      textColor: Colors.amber.shade500,
+                      textColor: Theme.of(context).buttonColor,
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Details()));
                       },

@@ -86,7 +86,6 @@ class home extends State<Home_screen> {
 
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.white,
         title: Text("Grocery store", style: Theme.of(context).textTheme.title,),
         actions: <Widget>[
           IconButton(
@@ -130,7 +129,7 @@ class home extends State<Home_screen> {
                             child: new Stack(
                             children: <Widget>[
                               new Icon(Icons.brightness_1,
-                                  size: 20.0, color: Colors.orange.shade500),
+                                  size: 20.0, color: Theme.of(context).buttonColor),
                               new Positioned(
                                   top: 4.0,
                                   right: 5.5,
