@@ -10,7 +10,18 @@ class MyApp extends StatelessWidget {
 
   ThemeData _buildSampleTheme() {
     final ThemeData base =ThemeData.light();
-    return base;
+    return base.copyWith(
+      primaryColor: Colors.white,
+      accentColor: Colors.white,
+      iconTheme: IconThemeData(
+        color: Colors.black,
+        size: 35,
+      ),
+      primaryIconTheme: IconThemeData(
+        color: Colors.black,
+      ),
+      buttonColor: Colors.amber.shade500
+    );
   }
 
   @override
