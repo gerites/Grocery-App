@@ -85,8 +85,7 @@ class item extends State<Item_Screen> {
             Navigator.pop(context);
           },
         ),
-        title: Text(toolbarname),
-        backgroundColor: Colors.white,
+        title: Text(toolbarname, style: Theme.of(context).textTheme.title,),
         actions: <Widget>[
           IconButton(
             tooltip: 'Search',

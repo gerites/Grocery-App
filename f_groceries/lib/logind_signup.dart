@@ -61,8 +61,7 @@ class login extends State<Login_Screen> {
     return new Scaffold(
         key: scaffoldKey,
         appBar: new AppBar(
-          title: Text('Login'),
-          backgroundColor: Colors.white,
+        title: Text('Login', style: Theme.of(context).textTheme.title,),
         ),
         body: SafeArea(
           child: new SingleChildScrollView(

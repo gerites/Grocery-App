@@ -126,8 +126,7 @@ class Cart extends State<Cart_screen> {
             Navigator.pop(context);
           },
         ),
-        title: Text(toolbarname),
-        backgroundColor: Colors.white,
+        title: Text(toolbarname, style: Theme.of(context).textTheme.title,),
         actions: <Widget>[
           new Padding(
             padding: const EdgeInsets.all(10.0),

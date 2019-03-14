@@ -54,8 +54,7 @@ class Help extends State<Help_Screen> {
               Navigator.pop(context);
             },
           ),
-          title: Text(toolbarname),
-          backgroundColor: Colors.white,
+        title: Text(toolbarname, style: Theme.of(context).textTheme.title,),
         ),
         body: Container(
           child: Column(

@@ -119,8 +119,7 @@ class oder_history extends State<Oder_History> {
               Navigator.pop(context);
             },
           ),
-          title: Text(toolbarname),
-          backgroundColor: Colors.white,
+        title: Text(toolbarname, style: Theme.of(context).textTheme.title,),
         ),
         body: ListView.builder(
             itemCount: itemList.length,

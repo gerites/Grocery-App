@@ -54,8 +54,7 @@ class signup extends State<Signup_Screen> {
     return new Scaffold(
         key: scaffoldKey,
         appBar: new AppBar(
-          title: Text('Signup'),
-          backgroundColor: Colors.white,
+        title: Text('Signup', style: Theme.of(context).textTheme.title,),
         ),
         body: SafeArea(
             child: new SingleChildScrollView(
