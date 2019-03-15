@@ -272,9 +272,8 @@ class item_details extends State<Item_Details> {
                                           onPressed: () {
                                             Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart_screen()));
                                           },
-                                          shape: new OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(30.0),
-                                          )),
+                                          shape: Theme.of(context).buttonTheme.shape
+                                      )
                                     ),
                                   ),
                                 ],

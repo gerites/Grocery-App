@@ -294,9 +294,8 @@ class payment extends State<Patment> {
                             onPressed: () {
                               //   Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Details()));
                             },
-                            shape: new OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                            )),
+                            shape: Theme.of(context).buttonTheme.shape
+                        ),
                       ),
                     ),
                   ],

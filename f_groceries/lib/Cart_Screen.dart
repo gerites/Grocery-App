@@ -423,9 +423,8 @@ class Cart extends State<Cart_screen> {
                                   MaterialPageRoute(
                                       builder: (context) => Checkout()));
                             },
-                            shape: new OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                            )),
+                            shape:Theme.of(context).buttonTheme.shape
+                        ),
                       ),
                     ),
                   ],

@@ -1,6 +1,7 @@
 import 'package:f_groceries/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'supplemental/cut_corners_border.dart';
 
 
 
@@ -22,7 +23,12 @@ class MyApp extends StatelessWidget {
       primaryIconTheme: IconThemeData(
         color: Colors.white,
       ),
-      buttonColor: Colors.blue,
+      buttonColor: Colors.green,
+      buttonTheme: ButtonThemeData(
+        shape: CutCornersBorder(
+          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+        ),
+      ),
       textTheme: TextTheme(
         title: TextStyle(
           color: Colors.white,

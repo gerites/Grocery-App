@@ -545,9 +545,8 @@ class check_out extends State<Checkout> {
                                   MaterialPageRoute(
                                       builder: (context) => Patment()));
                             },
-                            shape: new OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                            )),
+                            shape: Theme.of(context).buttonTheme.shape
+                        ),
                       ),
                     ),
                   ],
