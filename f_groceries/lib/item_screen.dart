@@ -754,10 +754,6 @@ class item extends State<Item_Screen> {
                                               fontSize: 13.0,
                                               letterSpacing: 0.5),
                                         ),
-
-
-
-
                                       ],
                                     ),
                                   ),
