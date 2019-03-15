@@ -2,8 +2,9 @@ import 'package:f_groceries/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'supplemental/cut_corners_border.dart';
+import 'themeProvider.dart';
 
-
+const CURRENT_STORE = 'SAMPOORNA';
 
 
 void main() => runApp(new MyApp());
@@ -11,39 +12,13 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
 
-  ThemeData _buildTheme() {
-    final ThemeData base =ThemeData.light();
-    return base.copyWith(
-      primaryColor: Colors.green,
-      accentColor: Colors.white,
-      iconTheme: IconThemeData(
-        color: Colors.black,
-        size: 35,
-      ),
-      primaryIconTheme: IconThemeData(
-        color: Colors.white,
-      ),
-      buttonColor: Colors.green,
-      buttonTheme: ButtonThemeData(
-        shape: CutCornersBorder(
-          borderRadius: BorderRadius.all(Radius.circular(30.0)),
-        ),
-      ),
-      textTheme: TextTheme(
-        title: TextStyle(
-          color: Colors.white,
-        ),
-      ).apply(
-        fontFamily: 'Rubik'
-      )
-    );
-  }
+  
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData _Theme = _buildTheme();
+    final ThemeData _theme = buildTheme(CURRENT_STORE);
     return new MaterialApp(
-        theme: _Theme,
+        theme: _theme,
       home: new MyHomePage(title: 'Groceries'),
     );
   }
