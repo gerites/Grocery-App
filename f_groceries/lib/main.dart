@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 
+
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
 
-  ThemeData _buildSampleTheme() {
+  ThemeData _buildTheme() {
     final ThemeData base =ThemeData.light();
     return base.copyWith(
       primaryColor: Colors.green,
@@ -23,17 +25,19 @@ class MyApp extends StatelessWidget {
       buttonColor: Colors.blue,
       textTheme: TextTheme(
         title: TextStyle(
-          color: Colors.white
-        )
+          color: Colors.white,
+        ),
+      ).apply(
+        fontFamily: 'Rubik'
       )
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData _sampleTheme = _buildSampleTheme();
+    final ThemeData _Theme = _buildTheme();
     return new MaterialApp(
-        theme: _sampleTheme,
+        theme: _Theme,
       home: new MyHomePage(title: 'Groceries'),
     );
   }
@@ -66,7 +70,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void navigationPage() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => Home_screen()));
-
   }
 
   @override
