@@ -4,7 +4,8 @@ import 'dart:async';
 import 'supplemental/cut_corners_border.dart';
 import 'themeProvider.dart';
 
-const CURRENT_STORE = 'SAMPOORNA';
+const CURRENT_STORE = 'DFF';
+// const CURRENT_STORE = 'SAMPOORNA';
 
 
 void main() => runApp(new MyApp());
